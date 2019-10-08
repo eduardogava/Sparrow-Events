@@ -70,16 +70,49 @@
             </div>
             <div class="col-sm-9">
               <div class="form-group row">
-                <label for="Nome" class="col-sm-2 col-form-label">Nome</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="Nome">
+                <label for="Nome">Nome: </label>
+                <input type="text" class="form-control" id="Nome">
+              </div>
+              <div class="form-group row">
+                <label for="DataNascimento">Data de Nascimento: </label>
+                <input type="date" class="form-control" id="DataNascimento">
+              </div>
+              <div class="form-group row">
+                <label>Sexo: </label>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="radioFeminino" name="radioSexo" class="custom-control-input">
+                  <label class="custom-control-label" for="radioFeminino">Feminino</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="radioMasculino" name="radioSexo" class="custom-control-input">
+                  <label class="custom-control-label" for="radioMasculino">Masculino</label>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="DataNascimento" class="col-sm-2 col-form-label">Data de Nascimento</label>
-                <div class="col-sm-10">
-                  <input type="date" class="form-control" id="DataNascimento">
-                </div>
+                <label for="Formacao">Formação: </label>
+
+                <select class="form-control" id="Formacao">
+                  <option></option>
+                  <option>Ensino Fundamental</option>
+                  <option>Ensino Médio</option>
+                  <option>Ensino Superior</option>
+                </select>
+
+                <label for="Profissao">Profissao: </label>
+
+                <select class="form-control" id="Profissao">
+                  <option></option>
+                  <option>Analista de Sistemas</option>
+                  <option>Dev. Frontend</option>
+                  <option>Dev. Backend</option>
+                  <option>Dev. FullStack</option>
+                </select>
+
+              </div>
+              <div class="form-group row">
+                <label for="CPF">CPF: </label>
+
+                <input type="text" class="form-control" id="CPF">
               </div>
             </div>
           </div>
